@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: bisque;
+    color: black;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+li{
+    list-style-type: circle;
+}
+.lista{
+    background-color: black;
+    color: bisque;
+    height: 500px;
+    width: 250px;
+    padding: 20px;
+}
+.options{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 200;
+    position: fixed; 
+    bottom: 50px;
+    right: 50%;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif
+}
+h2{
+    font-size: 15px;
+}
+.selected-language {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+    </style>
+</head>
+<body>
+    <h1 onclick="showImage('office')">Office programs <img src="images/arrowdown.jpg" alt="arrow"></h1>
+    <div id="office" class="selected-language">
+        <h2>Software tools for office tasks</h2>
+    </div>
+    <div class="lista">
+        <h1>Examples</h1>
+        <ul>
+            <li>Spreadsheet editors</li>
+            <p>- Microsoft Excel</p>
+            <li>Presentation programs</li>
+            <p>- Microsoft PowerPoint</p>
+            <li>Database management systems</li>
+            <p>- Microsoft Access</p>
+            <li>Audio managers</li>
+            <p>- Audacity</p>
+            <li>Photo editors</li>
+            <p>- Adobe Photoshop</p>
+        </ul>
+    </div>
+
+    <script>
+        function showImage(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+        <div class="options">
+            <a href="main.html">Home page</a>
+        </div>
+</body>
+</html>

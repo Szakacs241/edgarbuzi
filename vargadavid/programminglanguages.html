@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.selected-language {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+body{
+    background-color: bisque;
+    color: black;
+}
+li{
+    list-style-type: circle;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+.lista{
+    background-color: black;
+    color: bisque;
+    height: 500px;
+    width: 250px;
+    padding: 20px;
+}
+.options{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 200;
+    position: fixed; 
+    bottom: 50px;
+    right: 50%;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif
+}
+h2{
+    font-size: 15px;
+}
+    </style>
+</head>
+<body>
+    <h1 onclick="showImage('programming')">Programming languages <img src="images/arrowdown.jpg" alt="arrow"></h1>
+    <div id="programming" class="selected-language">
+        <h2>Tools for creating software and applications.</h2>
+    </div>
+    <div class="lista">
+        <h1>Most popular languages</h1>
+        <ul>
+            <li onclick="showImage('python')">Python</li>
+            <li onclick="showImage('java')">Java</li>
+            <li onclick="showImage('javascript')">JavaScript</li>
+            <li onclick="showImage('cpp')">C++</li>
+            <li onclick="showImage('csharp')">C#</li>
+        </ul>
+        <p>(click to the text for examples)</p>
+    </div>
+
+    <div id="pythonImage" class="selected-language">
+        <img src="photoprogramming/python_image.jpg" alt="Python Image">
+        <p>print("Hello World!")</p>
+    </div>
+    <div id="javaImage" class="selected-language">
+        <img src="photoprogramming/java_image.jpg" alt="Java Image">
+        <p>public class HelloWorld {
+            public static void main(String[] args) {
+                System.out.println("Hello World!");
+            }
+        }</p>
+    </div>
+    <div id="javascriptImage" class="selected-language">
+        <img src="photoprogramming/javascript_image.jpg" alt="JavaScript Image">
+        <p>console.log("Hello World!");</p>
+    </div>
+    <div id="cppImage" class="selected-language">
+        <img src="photoprogramming/cpp_image.jpg" alt="C++ Image">
+        <p>#include <iostream>
+
+            int main() {
+                std::cout << "Hello World!" << std::endl;
+                return 0;
+            }</p>
+    </div>
+    <div id="csharpImage" class="selected-language">
+        <img src="photoprogramming/csharp_image.jpg" alt="C# Image">
+        <p>using System;
+
+            class Program
+            {
+                static void Main()
+                {
+                    Console.WriteLine("Hello World!");
+                }
+            }</p>
+    </div>
+
+    <script>
+        function showImage(language) {
+            var allImages = document.querySelectorAll('.selected-language');
+            allImages.forEach(function(image) {
+                image.style.display = 'none';
+            });
+            var selectedImage = document.getElementById(language + 'Image');
+            selectedImage.style.display = 'block';
+        }
+    </script>
+        <div class="options">
+            <a href="main.html">Home page</a>
+        </div>
+</body>
+</html>

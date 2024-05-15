@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: bisque;
+    color: black;
+}
+li{
+    list-style-type: circle;
+}
+.lista{
+    background-color: black;
+    color: bisque;
+    height: 500px;
+    width: 250px;
+    padding: 20px;
+}
+.options{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 200;
+    position: fixed; 
+    bottom: 50px;
+    right: 50%;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif
+}
+h2{
+    font-size: 15px;
+}
+.selected-language {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+    </style>
+</head>
+<body>
+    <h1 onclick="showImage('hardware')">Hardware <img src="images/arrowdown.jpg" alt="arrow"></h1>
+    <div id="hardware" class="selected-language">
+        <h2>Hardware: Physical components of a computer system, such as mouse, 
+            keyboard, and monitor, used for input and output.</h2>
+    </div>
+    <div class="lista">
+        <ul>
+            <li>Hardwares</li>
+            <p>- mouse, keyboard, monitor</p>
+        </ul>
+    </div>
+<!-- 
+    Hardware: Physical components of a computer system, such as mouse, 
+keyboard, and monitor, used for input and output.
+
+Types of computer systems:
+
+- Personal computer: (Laptops, tablets)
+The personal computer is one of the most common types of computer due to its versatility and relatively low price.
+Desktop personal computers have a monitor, a keyboard, a mouse, and a computer case.
+
+Case: A computer case encloses most of the components of a desktop computer system.
+Motherboard: The motherboard is the main component of a computer.
+Storage devices: A storage device is computer hardware or digital media that is used for storing, porting, and extracting data files and objects.
+Fixed media: Data is stored by a computer using a variety of media.
+Input and output peripherals: Input and output devices are typically housed externally to the main computer chassis.
+Input device: Input devices allow the user to enter information into the system, or control its operation.
+Output device: Output devices are designed around the senses of human beings.
+
+- Mainframe computer
+A mainframe computer is a much larger computer that typically fills a room and may cost many hundreds or thousands of times as much as a personal computer.
+They are designed to perform large numbers of calculations for governments and large enterprises.
+
+- Departmental computing
+In the 1960s and 1970s, more and more departments started to use cheaper and dedicated systems for specific purposes like process control and laboratory automation.
+
+- Supercomputer
+A supercomputer is superficially similar to a mainframe but is instead intended for extremely demanding computational tasks. -->
+    <script>
+        function showImage(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+    <div class="options">
+        <a href="main.html">Home page</a>
+    </div>
+</body>
+</html>
+
+
