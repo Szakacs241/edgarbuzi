@@ -12,6 +12,7 @@ body{
 img{
     width: 25px;
     height: 25px;
+    padding-left: 5px;
 }
 li{
     list-style-type: circle;
@@ -51,24 +52,30 @@ h2{
 <body>
     <h1 onclick="showImage('office')">Office programs <img src="images/arrowdown.jpg" alt="arrow"></h1>
     <div id="office" class="selected-language">
-        <h2>Software tools for office tasks</h2>
+        <h2>Software tools for office tasks.</h2>
     </div>
     <div class="lista">
-        <h1>Examples</h1>
+        <h3>Examples:</h3>
+        <p><strong>Spreadsheet editors</strong></p>
         <ul>
-            <li>Spreadsheet editors</li>
-            <p>- Microsoft Excel</p>
-            <li>Presentation programs</li>
-            <p>- Microsoft PowerPoint</p>
-            <li>Database management systems</li>
-            <p>- Microsoft Access</p>
-            <li>Audio managers</li>
-            <p>- Audacity</p>
-            <li>Photo editors</li>
-            <p>- Adobe Photoshop</p>
+            <li>Microsoft Excel<img src="photooffice/excel.jpg" alt="excel"></li>
         </ul>
-    </div>
-
+        <p><strong></strong>Presentation programs</p>
+         <ul>
+            <li>Microsoft PowerPoint<img src="photooffice/ppt.jpg" alt="ppt"></li>
+        </ul>
+        <p><strong>Database management systems</strong></p>
+        <ul>
+            <li>Microsoft Access<img src="photooffice/access.jpg" alt="access"></li>
+        </ul>
+        <p><strong>Audio managers</strong></p>
+        <ul>
+            <li>Audacity<img src="photooffice/audacity.jpg" alt="audacity"></li>
+        </ul>
+        <p><strong>Photo editors</strong></p>
+        <ul>
+            <li>Adobe Photoshop<img src="photooffice/adobe.jpg" alt="adobe"></li>
+        </ul>
     <script>
         function showImage(id) {
             var element = document.getElementById(id);

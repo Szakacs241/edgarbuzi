@@ -11,13 +11,14 @@ body{
 }
 li{
     list-style-type: circle;
+    margin-bottom: 10px;
 }
 .lista{
     background-color: black;
     color: bisque;
-    height: 500px;
-    width: 250px;
     padding: 20px;
+    margin-top: 20px;
+    width: 250px;
 }
 .options{
     text-align: center;
@@ -32,7 +33,8 @@ li{
 }
 h1{
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 h2{
     font-size: 15px;
@@ -46,6 +48,9 @@ img{
     width: 25px;
     height: 25px;
 }
+p {
+    margin: 0;
+}
     </style>
 </head>
 <body>
@@ -55,38 +60,36 @@ img{
             keyboard, and monitor, used for input and output.</h2>
     </div>
     <div class="lista">
+        <h3>Types of computer systems:</h3>
+        <p><strong>Personal computer: (Laptops, tablets)</strong></p>
         <ul>
-            <li>Hardwares</li>
-            <p>- mouse, keyboard, monitor</p>
+        <p>The personal computer is one of the most common types of computer due to its versatility and relatively low price.
+            Desktop personal computers have a monitor, a keyboard, a mouse, and a computer case.</p>
+        </ul>
+        <ul>
+            <li><strong>Case:</strong> A computer case encloses most of the components of a desktop computer system.</li>
+            <li><strong>Motherboard:</strong> The motherboard is the main component of a computer.</li>
+            <li><strong>Storage devices:</strong> A storage device is computer hardware or digital media that is used for storing, porting, and extracting data files and objects.</li>
+            <li><strong>Fixed media:</strong> Data is stored by a computer using a variety of media.</li>
+            <li><strong>Input and output peripherals:</strong> Input and output devices are typically housed externally to the main computer chassis.</li>
+            <li><strong>Input device:</strong> Input devices allow the user to enter information into the system, or control its operation.</li>
+            <li><strong>Output device:</strong> Output devices are designed around the senses of human beings.</li>
+        </ul>
+        <p><strong>Mainframe computer:</strong></p>
+        <ul>
+        <p>A mainframe computer is a much larger computer that typically fills a room and may cost many hundreds or thousands of times as much as a personal computer.
+            They are designed to perform large numbers of calculations for governments and large enterprises.</p>
+        </ul>
+        <p><strong>Departmental computing:</strong></p>
+        <ul>
+        <p>In the 1960s and 1970s, more and more departments started to use cheaper and dedicated systems for specific purposes like process control and laboratory automation.        </p>
+        </ul>
+        <p><strong>Supercomputer:</strong></p>
+        <ul>
+        <p>A supercomputer is superficially similar to a mainframe but is instead intended for extremely demanding computational tasks.</p>
         </ul>
     </div>
-<!-- 
-    Hardware: Physical components of a computer system, such as mouse, 
-keyboard, and monitor, used for input and output.
-
-Types of computer systems:
-
-- Personal computer: (Laptops, tablets)
-The personal computer is one of the most common types of computer due to its versatility and relatively low price.
-Desktop personal computers have a monitor, a keyboard, a mouse, and a computer case.
-
-Case: A computer case encloses most of the components of a desktop computer system.
-Motherboard: The motherboard is the main component of a computer.
-Storage devices: A storage device is computer hardware or digital media that is used for storing, porting, and extracting data files and objects.
-Fixed media: Data is stored by a computer using a variety of media.
-Input and output peripherals: Input and output devices are typically housed externally to the main computer chassis.
-Input device: Input devices allow the user to enter information into the system, or control its operation.
-Output device: Output devices are designed around the senses of human beings.
-
-- Mainframe computer
-A mainframe computer is a much larger computer that typically fills a room and may cost many hundreds or thousands of times as much as a personal computer.
-They are designed to perform large numbers of calculations for governments and large enterprises.
-
-- Departmental computing
-In the 1960s and 1970s, more and more departments started to use cheaper and dedicated systems for specific purposes like process control and laboratory automation.
-
-- Supercomputer
-A supercomputer is superficially similar to a mainframe but is instead intended for extremely demanding computational tasks. -->
+</div>
     <script>
         function showImage(id) {
             var element = document.getElementById(id);
