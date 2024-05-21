@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: bisque;
+    color: black;
+}
+li{
+    list-style-type: circle;
+    margin-bottom: 10px;
+}
+.lista{
+    background-color: black;
+    color: bisque;
+    padding: 20px;
+    margin-top: 20px;
+    width: 250px;
+}
+.options{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 200;
+    position: fixed; 
+    bottom: 50px;
+    right: 50%;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+h2{
+    font-size: 15px;
+}
+.selected-language {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+p {
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <h1 onclick="toggleH2('cybersecurity')">Cyber security <img src="images/arrowdown.jpg" alt="arrow"></h1>
+    <div id="cybersecurity">
+        <h2 class="selected-language">Measures taken to protect computer systems and data from unauthorized access, attacks, and damage. Involves techniques like encryption, firewalls, antivirus software, and intrusion detection systems.</h2>
+        <div class="lista">
+            <p>Cyber Security:</p>
+            <p>Measures taken to protect computer systems and data from unauthorized access, attacks, and damage. Involves techniques like encryption, firewalls, antivirus software, and intrusion detection systems.</p>
+            <p><strong>Usage:</strong></p>
+            <ul>
+                <li>Cyber security involves protecting computers, networks, and data from unauthorized access, attacks, and damage.</li>
+                <li>It ensures the confidentiality, integrity, and availability of information.</li>
+                <li>Common practices include using firewalls, antivirus software, encryption, and secure passwords.</li>
+            </ul>
+            <p><strong>Types:</strong></p>
+            <ul>
+                <li>Network Security: Protects network infrastructure from attacks and unauthorized access.</li>
+                <li>Information Security: Safeguards data from unauthorized access and alterations.</li>
+                <li>Application Security: Ensures software applications are secure from threats.</li>
+                <li>Operational Security: Protects the procedures and processes for handling and protecting data.</li>
+            </ul>
+            <p><strong>History:</strong></p>
+            <p>Cyber security has its roots in the 1970s with the development of ARPANET, the precursor to the internet.</p>
+            <p>The first known computer virus, the Creeper virus, appeared in the early 1970s. As the internet grew, so did the need for security measures.</p>
+            <p>In the 1980s and 1990s, the rise of personal computers and the internet led to the development of antivirus software and firewalls.</p>
+            <p>Today, cyber security is a critical field, constantly evolving to counter sophisticated threats like phishing, ransomware, and advanced persistent threats (APTs).</p>
+        </div>
+    </div>
+    <script>
+        function toggleH2(id) {
+            var element = document.querySelector("#" + id + " .selected-language");
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+    <div class="options">
+        <a href="main.html">Home page</a>
+    </div>
+</body>
+</html>

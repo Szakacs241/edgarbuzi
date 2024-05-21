@@ -1,0 +1,174 @@
+Hardware: Physical components of a computer system, such as mouse, 
+keyboard, and monitor, used for input and output.
+
+Types of computer systems:
+
+- Personal computer: (Laptops, tablets)
+The personal computer is one of the most common types of computer due to its versatility and relatively low price.
+Desktop personal computers have a monitor, a keyboard, a mouse, and a computer case.
+
+Case: A computer case encloses most of the components of a desktop computer system.
+Motherboard: The motherboard is the main component of a computer.
+Storage devices: A storage device is computer hardware or digital media that is used for storing, porting, and extracting data files and objects.
+Fixed media: Data is stored by a computer using a variety of media.
+Input and output peripherals: Input and output devices are typically housed externally to the main computer chassis.
+Input device: Input devices allow the user to enter information into the system, or control its operation.
+Output device: Output devices are designed around the senses of human beings.
+
+- Mainframe computer
+A mainframe computer is a much larger computer that typically fills a room and may cost many hundreds or thousands of times as much as a personal computer.
+They are designed to perform large numbers of calculations for governments and large enterprises.
+
+- Departmental computing
+In the 1960s and 1970s, more and more departments started to use cheaper and dedicated systems for specific purposes like process control and laboratory automation.
+
+- Supercomputer
+A supercomputer is superficially similar to a mainframe but is instead intended for extremely demanding computational tasks.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Software: Programs and instructions that tell the hardware what to do.
+Includes operating systems like Windows and Linux, as well as applications.
+
+Types: 
+- Application software
+- System software
+    Operating systems
+    Device drivers
+    Utilities
+-Malicious software
+
+History:
+An algorithm for what would have been the first piece of software
+was written by Ada Lovelace in the 19th century, for the planned
+Analytical Engine. She created proofs to show how the engine
+would calculate Bernoulli numbers. Because of the proofs and the
+algorithm, she is considered the first computer programmer.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+File Management: Organizing, storing,
+and accessing files on a computer system.
+
+Usage:
+File management involves organizing, storing, retrieving, and managing data files on a computer.
+It helps users and software to efficiently locate and use files when needed.
+Common tasks include creating, naming, moving, copying, and deleting files and folders.
+
+Types:
+Manual File Management: Users manually organize files into folders and subfolders.
+Automated File Management: Software tools automatically organize and manage files based on predefined rules.
+
+History:
+File management has evolved from simple text-based systems in early computers to sophisticated graphical user interfaces (GUIs) today.
+Early systems required users to type commands to manage files, but modern systems allow users to interact with files using icons and menus.
+Notable developments include the introduction of the hierarchical file system in the 1960s
+and the widespread adoption of GUIs in the 1980s with operating systems like Windows and macOS.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Browsers: Software applications for accessing and navigating the internet, 
+like Google Chrome, Mozilla Firefox, and Microsoft Edge.
+
+History: The first web browser, called WorldWideWeb, was created in 1990 by Sir Tim Berners-Lee.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Programming Languages: Tools for creating software and applications. 
+Examples include Python, Java, JavaScript, C++, and many more.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Networking: The practice of connecting
+computers and other devices to share resources and information. 
+Includes concepts like TCP/IP, routers, switches, and protocols like HTTP and FTP.
+
+Use:
+Computer networks extend interpersonal communications by electronic means
+with various technologies, such as email, instant messaging, online chat,
+voice and video telephone calls, and video conferencing.
+
+Network packet:
+Most modern computer networks use protocols based on
+packet-mode transmission. A network packet is a formatted unit
+of data carried by a packet-switched network.
+
+Network topology:
+The physical or geographic locations of network nodes and links
+generally have relatively little effect on a network,
+but the topology of interconnections of a network can significantly
+affect its throughput and reliability.
+Common topologies are:
+- Bus network
+- Star network
+- Ring network
+- Mesh network
+- Fully connected network
+- Tree network
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Cyber Security: Measures taken to protect computer systems and data from 
+unauthorized access, attacks, and damage. Involves techniques like encryption, 
+firewalls, antivirus software, and intrusion detection systems.
+
+Usage:
+Cyber security involves protecting computers, networks, and data from unauthorized access, attacks, and damage.
+It ensures the confidentiality, integrity, and availability of information.
+Common practices include using firewalls, antivirus software, encryption, and secure passwords.
+
+Types:
+Network Security: Protects network infrastructure from attacks and unauthorized access.
+Information Security: Safeguards data from unauthorized access and alterations.
+Application Security: Ensures software applications are secure from threats.
+Operational Security: Protects the procedures and processes for handling and protecting data.
+
+History:
+Cyber security has its roots in the 1970s with the development of ARPANET, the precursor to the internet.
+The first known computer virus, the Creeper virus, appeared in the early 1970s. As the internet grew,
+so did the need for security measures. In the 1980s and 1990s, the rise of personal computers and the internet
+led to the development of antivirus software and firewalls. Today, cyber security is a critical field,
+constantly evolving to counter sophisticated threats like phishing, ransomware, and advanced persistent threats (APTs).
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Office Programs: Software tools for office tasks, including spreadsheet editors 
+(like Microsoft Excel), presentation programs (like Microsoft PowerPoint), 
+database management systems (like Microsoft Access), 
+audio managers, and photo editors (like Adobe Photoshop).
+
+spreadsheet: The Spreadsheet Editor is an online
+application that allows you to edit spreadsheets directly in your browser.
+
+presentation: In computing, a presentation program
+is a software package used to display
+information in the form of a slide show.
+
+database: Database Management Systems (DBMS)
+are software systems used to store, retrieve, and run queries on data.
+
+audio: Audio Manager allows for adjustments to Sound Enhancement,
+Situational Sound Management and Directionality on a per-memory basis.
+
+photo: A photo editor is a digital image manipulator working
+with digital photographs, either by enhancing them,
+modifying them, or manipulating them.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Operating Systems: 
+An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.
+
+Key Functions:
+- Resource Management: The OS allocates CPU time, memory, storage, and other resources to running programs efficiently.
+- Process Management: It oversees the execution of multiple processes, handling tasks such as scheduling, synchronization, and inter-process communication.
+- Memory Management: The OS ensures that programs have access to memory when needed, managing both physical and virtual memory spaces.
+- File System Management: It organizes and controls data storage, facilitating file creation, deletion, and access while maintaining file integrity.
+- Device Management: The OS communicates with hardware devices such as printers, scanners, and input/output peripherals, coordinating data transfer and device usage.
+
+Common Operating Systems:
+- Windows: Developed by Microsoft, Windows is a widely used OS known for its user-friendly interface and extensive compatibility with software and hardware.
+- Linux: Linux is a Unix-like OS renowned for its stability, security, and open-source nature, offering numerous distributions tailored for various purposes.
+- macOS: Developed by Apple Inc., macOS powers Apple's Macintosh computers, known for its sleek design, robust performance, and seamless integration with Apple's ecosystem.
+- Unix: Unix is an influential family of multitasking, multi-user OSes known for their reliability, scalability, and widespread use in server environments.
+- Android: Designed primarily for mobile devices, Android is an open-source OS developed by Google, dominating the smartphone and tablet market with its versatility and extensive app ecosystem.

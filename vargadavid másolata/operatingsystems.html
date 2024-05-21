@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: bisque;
+    color: black;
+}
+li{
+    list-style-type: circle;
+    margin-bottom: 10px;
+}
+.lista{
+    background-color: black;
+    color: bisque;
+    padding: 20px;
+    margin-top: 20px;
+    width: 250px;
+}
+.options{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 200;
+    position: fixed; 
+    bottom: 50px;
+    right: 50%;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+h2{
+    font-size: 15px;
+}
+.selected-language {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+p {
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <h1 onclick="toggleH2('operatingsystems')">Operating systems <img src="images/arrowdown.jpg" alt="arrow"></h1>
+    <div id="operatingsystems">
+        <h2 class="selected-language">An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.</h2>
+        <div class="lista">
+            <p>Operating Systems:</p>
+            <p>An operating system (OS) is system software that manages computer hardware and software resources, and provides common services for computer programs.</p>
+            <p><strong>Key Functions:</strong></p>
+            <ul>
+                <li>Resource Management: The OS allocates CPU time, memory, storage, and other resources to running programs efficiently.</li>
+                <li>Process Management: It oversees the execution of multiple processes, handling tasks such as scheduling, synchronization, and inter-process communication.</li>
+                <li>Memory Management: The OS ensures that programs have access to memory when needed, managing both physical and virtual memory spaces.</li>
+                <li>File System Management: It organizes and controls data storage, facilitating file creation, deletion, and access while maintaining file integrity.</li>
+                <li>Device Management: The OS communicates with hardware devices such as printers, scanners, and input/output peripherals, coordinating data transfer and device usage.</li>
+            </ul>
+            <p><strong>Common Operating Systems:</strong></p>
+            <ul>
+                <li>Windows: Developed by Microsoft, Windows is a widely used OS known for its user-friendly interface and extensive compatibility with software and hardware.</li>
+                <li>Linux: Linux is a Unix-like OS renowned for its stability, security, and open-source nature, offering numerous distributions tailored for various purposes.</li>
+                <li>macOS: Developed by Apple Inc., macOS powers Apple's Macintosh computers, known for its sleek design, robust performance, and seamless integration with Apple's ecosystem.</li>
+                <li>Unix: Unix is an influential family of multitasking, multi-user OSes known for their reliability, scalability, and widespread use in server environments.</li>
+                <li>Android: Designed primarily for mobile devices, Android is an open-source OS developed by Google, dominating the smartphone and tablet market with its versatility and extensive app ecosystem.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleH2(id) {
+            var element = document.querySelector("#" + id + " .selected-language");
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+    <div class="options">
+        <a href="main.html">Home page</a>
+    </div>
+</body>
+</html>

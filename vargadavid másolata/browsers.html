@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: bisque;
+    color: black;
+}
+li{
+    list-style-type: circle;
+}
+.lista{
+    background-color: black;
+    color: bisque;
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+}
+.options{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 200;
+    position: fixed; 
+    bottom: 50px;
+    right: 50%;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif
+}
+h2{
+    font-size: 15px;
+}
+.selected-language {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+    </style>
+</head>
+<body>
+    <h1 onclick="showImage('browsers')">Browsers <img src="images/arrowdown.jpg" alt="arrow"></h1>
+    <div id="browsers" class="selected-language">
+        <h2>Software applications for accessing and navigating the internet</h2>
+    </div>
+    <div class="lista">
+    <ul>
+        <li>Most popular:</li>
+        <h2>
+        - Google Chrome (64.38%) <a href="https://www.google.co.uk/"><img src="photobrowser/google_image.jpg" alt="Google Image"></a>
+        </h2>
+        <li>First browser:</li>
+        <h2>
+        - WorldWideWeb (1989.03.12) <a href="https://en.wikipedia.org/wiki/World_Wide_Web"><img src="photobrowser/www_image.jpg" alt="WorldWideWeb Image"></a>
+        </h2>
+        <li>Latest browser:</li>
+        <h2>
+        - Arc (2022.04.19)  <a href="https://arc.net/"><img src="photobrowser/arc_image.jpg" alt="Arc Image"></a>
+        </h2>
+        <li>Other browsers</li>
+        <h2>- Brave <a href="https://brave.com"><img src="photobrowser/brave_image.jpg" alt="Brave Image"></a></h2>
+        <h2>- Mozilla Firefox <a href="https://www.mozilla.org/"><img src="photobrowser/firefox_image.jpg" alt="Firefox Image"></a></h2>
+        <h2>- Microsoft Edge <a href="https://www.microsoft.com/hu-hu/edge/download?form=MA13FJ"><img src="photobrowser/edge_image.jpg" alt="Edge Image"></a></h2>
+    </ul>
+</div>
+<script>
+    function showImage(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+    <div class="options">
+        <a href="main.html">Home page</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: bisque;
+    color: black;
+}
+li{
+    list-style-type: circle;
+    margin-bottom: 10px;
+}
+.lista{
+    background-color: black;
+    color: bisque;
+    padding: 20px;
+    margin-top: 20px;
+    width: 250px;
+}
+.options{
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 200;
+    position: fixed; 
+    bottom: 50px;
+    right: 50%;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+h1{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+h2{
+    font-size: 15px;
+}
+.selected-language {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+img{
+    width: 25px;
+    height: 25px;
+}
+p {
+    margin: 0;
+}
+    </style>
+</head>
+<body>
+    <h1 onclick="toggleH2('software')">Software <img src="images/arrowdown.jpg" alt="arrow"></h1>
+    <div id="software">
+        <h2 class="selected-language">Software: Programs and instructions that tell the hardware what to do. Includes operating systems like Windows and Linux, as well as applications.</h2>
+        <div class="lista">
+            <ul>
+                <h2><b>Types:</b></h2>
+                <li>Application software</li>
+                <li>System software</li>
+                <p>- Operating systems</p>
+                <p>- Device drivers</p>
+                <p>- Utilities</p>
+                <li>Malicious software</li>
+                <h2><b>History:</b></h2>
+                <p>An algorithm for what would have been the first piece of software was written by Ada Lovelace in the 19th century, for the planned Analytical Engine. She created proofs to show how the engine would calculate Bernoulli numbers. Because of the proofs and the algorithm, she is considered the first computer programmer.</p>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleH2(id) {
+            var element = document.querySelector("#" + id + " .selected-language");
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+    <div class="options">
+        <a href="main.html">Home page</a>
+    </div>
+</body>
+</html>
